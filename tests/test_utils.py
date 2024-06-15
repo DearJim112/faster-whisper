@@ -10,6 +10,7 @@ def test_available_models():
 
 
 def test_download_model(tmpdir):
+    tmpdir = "/workspace/faster-whisper"
     output_dir = str(tmpdir.join("model"))
 
     model_dir = download_model("tiny", output_dir=output_dir)
